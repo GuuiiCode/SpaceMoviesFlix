@@ -1,0 +1,27 @@
+.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $azul;
+    height: 85px;
+
+    &__logo {
+        width: 210px;
+    }
+
+    &__navegacao {
+        display: flex;
+        align-items: center;
+        column-gap: 45px;
+        color: $cinza-claro;
+    }
+
+    .cabecalho_link {
+        font-size: 17px;
+
+        &:hover {
+            cursor: pointer;
+            color: $neutro;
+        }
+    }
+}
