@@ -1,5 +1,7 @@
 # Space Movies Flix
 
+![image](screen.PNG)
+
 Aplicação desenvolvida para aplicar os conhecimentos básicos de desenvolvimento web.
 
 ## Conceitos aplicados
