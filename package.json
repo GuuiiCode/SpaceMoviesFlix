@@ -1,0 +1,14 @@
+{
+  "name": "SpaceMoviesFlix",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/GuuiiCode/SpaceMoviesFlix.git",
+  "author": "Pequenojoohn <pequenojoohn@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "sass": "sass --watch scss/styles.scss css/styles.css"
+  },
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}
