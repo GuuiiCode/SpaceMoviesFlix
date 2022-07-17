@@ -131,3 +131,5 @@ dist
 
 css
 yarn.lock
+package-lock.json
+.vscode

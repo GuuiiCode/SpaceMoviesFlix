@@ -12,16 +12,51 @@
     &__navegacao {
         display: flex;
         align-items: center;
-        column-gap: 45px;
         color: $cinza-claro;
+
+        >li {
+            &:last-child {
+                margin-left: 10px;
+            }
+        }
     }
 
-    .cabecalho_link {
+    &_link {
         font-size: 17px;
+        position: relative;
+        width: 100px;
+        text-align: center;
+
+        ul {
+            display: none;
+            position: absolute;
+            width: 100px;
+
+            .submenu {
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
 
         &:hover {
             cursor: pointer;
             color: $neutro;
+            background-color: #364766;
+            padding: 18.5% 0;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                margin-top: 10px;
+
+                .submenu {
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.18);
+                    }
+                }
+            }
         }
     }
 }
