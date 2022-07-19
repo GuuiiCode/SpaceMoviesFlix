@@ -23,6 +23,7 @@
             position: relative;
             width: 100px;
             text-align: center;
+            z-index: 3;
 
             ul {
                 display: none;
@@ -34,6 +35,15 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+
+                    a {
+                        text-decoration: none;
+                        color: $neutro;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
                 }
             }
 
@@ -41,7 +51,7 @@
                 cursor: pointer;
                 color: $neutro;
                 background-color: #364766;
-                padding: 18.5% 0;
+                padding: 17.5% 0;
 
                 ul {
                     display: flex;
@@ -87,7 +97,7 @@
             button {
                 position: absolute;
                 right: 7px;
-                bottom: 4px;
+                bottom: 3px;
                 border: none;
                 outline: none;
                 background: transparent;
@@ -101,6 +111,11 @@
 
         &__menu {
             display: block;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 30px;
+            color: $vermelho;
         }
 
         &__navegacao {
