@@ -6,9 +6,11 @@
   "author": "Pequenojoohn <pequenojoohn@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "sass": "sass --watch scss/styles.scss css/styles.css"
+    "sass": "sass --watch scss/styles.scss css/styles.css",
+    "server": "json-server --watch database/db.json"
   },
   "dependencies": {
+    "json-server": "^0.17.0",
     "sass": "^1.53.0"
   }
 }
