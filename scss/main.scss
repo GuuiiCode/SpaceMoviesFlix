@@ -73,10 +73,14 @@ main {
                     border: 0;
                     width: 200px;
                     padding: 0.875rem;
-                    color: $neutro;
                     font-size: 24px;
                     border-radius: 3px;
                     transition: 0.5s all;
+                    
+                    a {
+                        color: $neutro;
+                        text-decoration: none;
+                    }
 
                     &:hover {
                         filter: brightness(70%);
