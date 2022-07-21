@@ -13,6 +13,7 @@ Aplicação desenvolvida para aplicar os conhecimentos básicos de desenvolvimen
 - [SASS](https://sass-lang.com/)
 - [SlickJS](https://kenwheeler.github.io/slick/)
 - JAVASCRIPT
+- [Json Server](https://www.npmjs.com/package/json-server)
 
 ## Como executar o projeto
 
@@ -28,6 +29,7 @@ $ yarn // Use npm install se estiver usando npm
 
 ```
 $ yarn sass // Use 'npm run sass' se estiver usando npm
+$ yarn server // Use 'npm run server' se estiver usando npm
 ```
 
 ## Contribuições
