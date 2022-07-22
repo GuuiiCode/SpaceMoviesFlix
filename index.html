@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <link href="./css/styles.css" rel="stylesheet">
+
     <title>Space Movies Flix</title>
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://kit.fontawesome.com/2d896b3e21.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,30 +17,47 @@
         <img src="./img/logo.png" alt="logo da empresa" class="cabecalho__logo">
         <nav>
             <ul class="cabecalho__navegacao">
-                <li class="cabecalho_link" href="#">Filmes
+                <li class="navegacao__link">Filmes
                     <ul>
-                        <li class="submenu" href="#">Ver todos</li>
-                        <li class="submenu" href="#">Adicionar</li>
+                        <li class="submenu">
+                            <a href="https://cssgradient.io/">Ver todos</a>
+                        </li>
+                        <li class="submenu">
+                            <a href="#">Adicionar</a>
+                        </li>
                     </ul>
                 </li>
-                <li class="cabecalho_link" href="#">Series
+                <li class="navegacao__link" href="#">Series
                     <ul>
-                        <li class="submenu" href="#">Ver todos</li>
-                        <li class="submenu" href="#">Adicionar</li>
+                        <li class="submenu">
+                            <a href="#">Ver todos</a>
+                        </li>
+                        <li class="submenu">
+                            <a href="#">Adicionar</a>
+                        </li>
                     </ul>
                 </li>
-                <li class="cabecalho_link" href="#">Animes
+                <li class="navegacao__link" href="#">Animes
                     <ul>
-                        <li class="submenu" href="#">Ver todos</li>
-                        <li class="submenu" href="#">Adicionar</li>
+                        <li class="submenu">
+                            <a href="#">Ver todos</a>
+                        </li>
+                        <li class="submenu">
+                            <a href="#">Adicionar</a>
+                        </li>
                     </ul>
                 </li>
-                <li>
-                    <input type="search" name="pesquisar" placeholder="Pesquise por filmes, séries e animes"
-                        class="cabecalho__pesquisar">
+                <li class="navegacao__pesquisar">
+                    <input type="search" name="pesquisar" placeholder="Pesquisar">
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
                 </li>
             </ul>
         </nav>
+        <button class="cabecalho__menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </header>
 
     <main>
@@ -55,6 +74,7 @@
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/main.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
 
 </html>

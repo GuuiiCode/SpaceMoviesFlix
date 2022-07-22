@@ -9,54 +9,152 @@
         width: 210px;
     }
 
+    &__menu {
+        display: none;
+    }
+
     &__navegacao {
         display: flex;
         align-items: center;
         color: $cinza-claro;
 
-        >li {
-            &:last-child {
-                margin-left: 10px;
+        .navegacao__link {
+            font-size: 17px;
+            width: 100px;
+            position: relative;
+            text-align: center;
+            z-index: 3;
+
+            ul {
+                display: none;
+                position: absolute;
+                width: 100px;
+
+                .submenu {
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    a {
+                        text-decoration: none;
+                        color: $neutro;
+                    }
+                }
+            }
+
+            &:hover {
+                cursor: pointer;
+                color: $neutro;
+                background-color: #364766;
+                padding: 17.5% 0;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 10px;
+
+                    .submenu {
+                        &:hover {
+                            background-color: rgba(0, 0, 0, 0.20);
+                        }
+                    }
+                }
+            }
+        }
+
+        .navegacao__pesquisar {
+            position: relative;
+            margin-left: 10px;
+
+            input {
+                border-radius: 20px;
+                padding: 4px;
+                border: 1px solid $cinza-claro;
+                outline: none;
+                background-color: $azul;
+                color: $neutro;
+
+                &::-webkit-search-cancel-button {
+                    -webkit-appearance: none;
+                }
+
+                &[type="search"] {
+                    padding-left: 10px;
+                    padding-right: 25px;
+                    font-size: 14px;
+                }
+
+                &::placeholder {
+                    color: $cinza-claro;
+                }
+            }
+
+            button {
+                position: absolute;
+                right: 7px;
+                bottom: 3px;
+                border: none;
+                outline: none;
+                background: transparent;
+                color: $cinza-claro;
+                font-size: 16px;
             }
         }
     }
 
-    &_link {
-        font-size: 17px;
-        position: relative;
-        width: 100px;
-        text-align: center;
+    @media screen and (max-width: 768px) {
 
-        ul {
-            display: none;
-            position: absolute;
-            width: 100px;
-
-            .submenu {
-                height: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+        &__menu {
+            display: flex;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-size: 30px;
+            color: $vermelho;
         }
 
-        &:hover {
-            cursor: pointer;
-            color: $neutro;
-            background-color: #364766;
-            padding: 18.5% 0;
+        &__navegacao {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            background-color: $azul;
+            left: 0;
+            top: 80px;
+            width: 100%;
+            line-height: 2;
+            z-index: 1;
 
-            ul {
-                display: flex;
-                flex-direction: column;
-                margin-top: 10px;
+            .navegacao__link {
+                width: 100%;
+                font-size: 18px;
 
-                .submenu {
-                    &:hover {
-                        background-color: rgba(0, 0, 0, 0.18);
+                ul {
+                    position: relative;
+                    width: 100%;
+
+                    .submenu {
+                        height: 15px;
+                        padding: 10px 0;
+                    }
+                }
+
+                &:hover {
+                    padding: 0;
+
+                    ul {
+                        margin-top: 0;
                     }
                 }
             }
+
+            .navegacao__pesquisar {
+                display: none;
+            }
+        }
+
+        .ativado {
+            display: block;
         }
     }
 }
