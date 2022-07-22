@@ -20,7 +20,6 @@
 
         .navegacao__link {
             font-size: 17px;
-            position: relative;
             width: 100px;
             text-align: center;
             z-index: 3;
@@ -115,7 +114,7 @@
         }
 
         &__navegacao {
-            // display: none; 
+            display: none;
             flex-direction: column;
             position: absolute;
             background-color: $azul;
@@ -130,13 +129,10 @@
                 font-size: 18px;
 
                 ul {
-                    // display: block;
                     position: relative;
-                    // left: 15px;
                     width: 100%;
 
                     .submenu {
-                        // background-color: #364766;
                         height: 15px;
                         padding: 10px 0;
                     }
@@ -144,7 +140,6 @@
 
                 &:hover {
                     padding: 0;
-                    background-color: #364766;
 
                     ul {
                         margin-top: 0;
@@ -155,6 +150,10 @@
             .navegacao__pesquisar {
                 display: none;
             }
+        }
+
+        .ativado {
+            display: block;
         }
     }
 }
