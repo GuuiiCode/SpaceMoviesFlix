@@ -10,7 +10,7 @@ main {
 
             .black-overlay {
                 width: 100%;
-                background-color: #00000050;
+                background: linear-gradient(150deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
                 height: 100%;
                 position: absolute;
                 top: 0;
@@ -76,7 +76,7 @@ main {
                     font-size: 24px;
                     border-radius: 3px;
                     transition: 0.5s all;
-                    
+
                     a {
                         color: $neutro;
                         text-decoration: none;
@@ -88,19 +88,79 @@ main {
                 }
             }
         }
-    }
 
-    div {
-        object-fit: cover;
-        width: 100%;
-        height: 600px;
-
-        img {
-            width: 100%;
-            height: 100%;
+        div {
             object-fit: cover;
+            width: 100%;
+            height: 600px;
+    
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
+
+    .category {
+        height: 300px;
+        padding: 1rem 0;
+        position: relative;
+        bottom: 140px;
+        border-radius: 3px;
+
+        h3 {
+            margin-left: 4rem;
+            font-weight: 600;
+            font-size: 18px;
+            color: $vermelho;
+            margin-bottom: 10px;
+        }
+
+        .category-movies {
+            margin-left: 4rem;
+            margin-right: 4rem;
+
+            .prev {
+                left: -30px;
+                position: absolute;
+                bottom: 150px;
+            }
+
+            .next {
+                right: -30px;
+                position: absolute;
+                bottom: 150px;
+            }
+
+            .category-movies-movie {
+                margin-right: 4rem;
+                width: 230px;
+
+                img {
+                    width: 100%;
+                    height: 230px;
+                    object-fit: cover;
+                    border-top-left-radius: 7px;
+                    border-top-right-radius: 7px;
+                }
+
+                div {
+                    background-color: $preto;
+                    border-bottom-left-radius: 7px;
+                    border-bottom-right-radius: 7px;
+
+
+                    p {
+                        color: $neutro;
+                        padding: 8px 0 8px 14px;
+                    }
+                }
+            }
+        }
+    }
+
+
 
     @media screen and (max-width: 992px) {
         .carousel {
@@ -114,6 +174,14 @@ main {
                     z-index: 2;
                 }
             }
+
+            div {
+                height: 400px;
+            }
+        }
+
+        .category {
+            bottom: 0;
         }
     }
 
