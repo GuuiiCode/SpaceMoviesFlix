@@ -37,6 +37,4 @@ function criarMenus() {
 
         navegacao.appendChild(navegacao__link);
     }
-
-    console.log(navegacao);
 }
