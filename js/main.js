@@ -4,6 +4,10 @@ async function apiGet() {
         .then(resolve => resolve.json())
         .then(data => data);
 
+    const moviesList = await fetch("http://localhost:3000/movies-list")
+        .then(resolve => resolve.json())
+        .then(data => data);
+
     await movies.map(movie => {
         const carouselMovies = `
             <div class="carousel-main">
@@ -57,6 +61,35 @@ async function apiGet() {
         fade: true
     });
 
+    await moviesList.reverse().map(movieList => {
+        const moviesListCarousel = `<div class="category">
+        <div class="category-movies"></div>
+        </div>`;
+
+        const afterCarousel = document.querySelector('.carousel');
+        
+        afterCarousel.insertAdjacentHTML('afterend', moviesListCarousel);
+
+        const category = document.querySelector('.category');
+        const moviesCategory = document.querySelector('.category-movies');
+
+        category.insertAdjacentHTML("afterbegin", `<h3>${movieList.title}</h3>`)
+
+        movieList.movies.map(movie => {
+            const movieShelf = `
+            <div class="category-movies-movie">
+                <a href="${movie.url}">
+                    <img src="${movie.image}" alt=""/>
+                    <div>
+                        <p>${movie.name}</p>
+                    </div>
+                </a>
+            </div>`;
+
+            moviesCategory.insertAdjacentHTML("beforeend", movieShelf)
+        });
+    });
+
     $('.category-movies').slick({
         dots: false,
         infinite: false,
@@ -69,7 +102,6 @@ async function apiGet() {
             {
                 breakpoint: 768,
                 settings: {
-                    // arrows: false,
                     centerMode: false,
                     centerPadding: '20px',
                     slidesToShow: 2

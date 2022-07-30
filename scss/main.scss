@@ -93,7 +93,7 @@ main {
             object-fit: cover;
             width: 100%;
             height: 600px;
-    
+
             img {
                 width: 100%;
                 height: 100%;
@@ -137,6 +137,7 @@ main {
                 margin-right: 4rem;
                 width: 230px;
 
+
                 img {
                     width: 100%;
                     height: 230px;
@@ -145,22 +146,23 @@ main {
                     border-top-right-radius: 7px;
                 }
 
-                div {
-                    background-color: $preto;
-                    border-bottom-left-radius: 7px;
-                    border-bottom-right-radius: 7px;
+                a {
+                    text-decoration: none;
 
+                    div {
+                        background-color: $preto;
+                        border-bottom-left-radius: 7px;
+                        border-bottom-right-radius: 7px;
 
-                    p {
-                        color: $neutro;
-                        padding: 8px 0 8px 14px;
+                        p {
+                            color: $neutro;
+                            padding: 8px 0 8px 14px;
+                        }
                     }
                 }
             }
         }
     }
-
-
 
     @media screen and (max-width: 992px) {
         .carousel {

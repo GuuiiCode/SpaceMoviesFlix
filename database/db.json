@@ -22,5 +22,92 @@
             "age": "+16",
             "hd": false
         }
+    ],
+    "movies-list": [
+        {
+            "title": "Melhores Filmes",
+            "movies": [
+                {
+                    "image": "https://images8.alphacoders.com/122/1220225.jpg",
+                    "name": "Homem aranha",
+                    "url": "/"
+                },
+                {
+                    "image": "https://images8.alphacoders.com/122/1220225.jpg",
+                    "name": "Homem aranha",
+                    "url": "/"
+                },
+                {
+                    "image": "https://images8.alphacoders.com/122/1220225.jpg",
+                    "name": "Homem aranha",
+                    "url": "/"
+                },
+                {
+                    "image": "https://images8.alphacoders.com/122/1220225.jpg",
+                    "name": "Homem aranha",
+                    "url": "/"
+                },
+                {
+                    "image": "https://images8.alphacoders.com/122/1220225.jpg",
+                    "name": "Homem aranha",
+                    "url": "/"
+                },
+                {
+                    "image": "https://images8.alphacoders.com/122/1220225.jpg",
+                    "name": "Homem aranha",
+                    "url": "/"
+                },
+                {
+                    "image": "https://images8.alphacoders.com/122/1220225.jpg",
+                    "name": "Homem aranha",
+                    "url": "/"
+                }
+            ]
+        },
+        {
+            "title": "Ação",
+            "movies": [
+                {
+                    "image": "https://images8.alphacoders.com/122/1220225.jpg",
+                    "name": "Detona Ralph",
+                    "url": "/"
+                },
+                {
+                    "image": "https://images8.alphacoders.com/122/1220225.jpg",
+                    "name": "Detona Ralph",
+                    "url": "/"
+                },
+                {
+                    "image": "https://images8.alphacoders.com/122/1220225.jpg",
+                    "name": "Detona Ralph",
+                    "url": "/"
+                },
+                {
+                    "image": "https://images8.alphacoders.com/122/1220225.jpg",
+                    "name": "Detona Ralph",
+                    "url": "/"
+                },
+                {
+                    "image": "https://images8.alphacoders.com/122/1220225.jpg",
+                    "name": "Detona Ralph",
+                    "url": "/"
+                },
+                {
+                    "image": "https://images8.alphacoders.com/122/1220225.jpg",
+                    "name": "Detona Ralph",
+                    "url": "/"
+                },
+                {
+                    "image": "https://images8.alphacoders.com/122/1220225.jpg",
+                    "name": "Detona Ralph",
+                    "url": "/"
+                },
+                {
+                    "image": "https://images8.alphacoders.com/122/1220225.jpg",
+                    "name": "Detona Ralph",
+                    "url": "/"
+                }
+            ]
+        }
     ]
 }
