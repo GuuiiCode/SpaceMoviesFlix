@@ -37,7 +37,7 @@ $ yarn server // Use 'npm run server' se estiver usando npm
 <table>
     <tr>
         <td align="center">
-            <a href="https://kentcdodds.com">
+            <a href="https://jonathan-matos.netlify.app/">
                 <img src="https://github.com/pequenojoohn.png" width="100px;" alt="" /><br /><sub><b>Jonathan Matos</br>(pequenojoohn)</b></sub></a><br />
                 <a href="https://jonathan-matos.netlify.app/" title="github">🌐</a>
         </td>
